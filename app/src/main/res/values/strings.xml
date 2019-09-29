@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">INFS3634 HW Task 1</string>
+    <string name="City">City</string>
+    <string name="Time">Time</string>
+    <string name="Sydney">Sydney</string>
+    <string name="WashingtonDC">Washington DC</string>
+    <string name="London">London</string>
+    <string name="RioDeJaneiro">Rio De Janeiro</string>
+    <string name="Singapore">Singapore</string>
+    <string name="Vietnam">Ha Noi</string>
 </resources>

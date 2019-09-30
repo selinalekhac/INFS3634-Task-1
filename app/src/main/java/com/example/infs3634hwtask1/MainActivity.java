@@ -23,9 +23,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ConstraintLayout layoutSydney = findViewById(R.id.layout_sydney);
-        TextView layoutSydneyText = layoutSydney.findViewById(R.id.cityTextView);
+        TextView layoutSydneyText = layoutSydney.findViewById(R.id.city_textview_id);
         layoutSydneyText.setText(R.string.sydney);
-        ImageView layoutSydneyImage = layoutSydney.findViewById(R.id.cityImageView);
+
+        ImageView layoutSydneyImage = layoutSydney.findViewById(R.id.city_imageview_id);
         layoutSydneyImage.setImageResource(R.drawable.sydneyharbourbridge);
 
 /*

@@ -23,26 +23,31 @@
                 android:layout_height="wrap_content"/>
 
             <include
+                android:id= "buttonSydney"
                 layout="@layout/chunk_time_city_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <include
+                android:id= "buttonVietnam"
                 layout="@layout/chunk_time_city_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <include
+                android:id= "buttonRioDeJaneiro"
                 layout="@layout/chunk_time_city_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <include
+                android:id= "buttonSingapore"
                 layout="@layout/chunk_time_city_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <include
+                android:id= "buttonWashingtonDC"
                 layout="@layout/chunk_time_city_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>

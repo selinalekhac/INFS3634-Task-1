@@ -3,17 +3,41 @@ package com.example.infs3634hwtask1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 
 public class MainActivity extends AppCompatActivity {
 
+    /*
+    public TextView layoutSydneyText;
+    public ImageView layoutSydneyImage;
+*/
+
+    //TextView layoutSydneyText = (TextView) findViewById(R.id.cityTextView);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ConstraintLayout layoutSydney = findViewById(R.id.layout_sydney);
+        TextView layoutSydneyText = layoutSydney.findViewById(R.id.cityTextView);
+        layoutSydneyText.setText(R.string.sydney);
+        ImageView layoutSydneyImage = layoutSydney.findViewById(R.id.cityImageView);
+        layoutSydneyImage.setImageResource(R.drawable.sydneyharbourbridge);
+
+/*
+        ConstraintLayout layoutSydney = findViewById(R.id.layout_Sydney);
+        layoutSydneyText = layoutSydney.findViewById(R.id.cityTextView);
+        layoutSydneyText.setText(R.string.sydney);
+        layoutSydneyImage = layoutSydney.findViewById(R.id.cityImageView);
+        layoutSydneyImage.setImageResource(R.drawable.sydneyharbourbridge);
+        */
     }
+
+
 
 /*
 From the Lecture Slides

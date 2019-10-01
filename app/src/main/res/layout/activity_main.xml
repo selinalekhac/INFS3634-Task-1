@@ -19,6 +19,7 @@
             android:orientation="vertical">
 
             <include
+                android:id="@+id/layout_london"
                 layout="@layout/chunk_time_city_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -30,25 +31,25 @@
                 android:layout_height="wrap_content"/>
 
             <include
-
+                android:id="@+id/layout_riodejaneiro"
                 layout="@layout/chunk_time_city_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <include
-
+                android:id="@+id/layout_singapore"
                 layout="@layout/chunk_time_city_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <include
-
+                android:id="@+id/layout_vietnam"
                 layout="@layout/chunk_time_city_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <include
-
+                android:id="@+id/layout_washingtondc"
                 layout="@layout/chunk_time_city_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>

@@ -10,24 +10,48 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-    /*
-    public TextView layoutSydneyText;
-    public ImageView layoutSydneyImage;
-*/
-
-    //TextView layoutSydneyText = (TextView) findViewById(R.id.cityTextView);
+    private TextView layoutCityNameText; //declares TextView
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Naming the City of Each Chunk Layout
+
         ConstraintLayout layoutSydney = findViewById(R.id.layout_sydney);
+        layoutCityNameText = layoutSydney.findViewById(R.id.city_textview_id);
+        layoutCityNameText.setText(R.string.sydney);
+
+        ConstraintLayout layoutLondon = findViewById(R.id.layout_london);
+        layoutCityNameText = layoutLondon.findViewById(R.id.city_textview_id);
+        layoutCityNameText.setText(R.string.London);
+
+        ConstraintLayout layoutRioDeJaneiro = findViewById(R.id.layout_riodejaneiro);
+        layoutCityNameText = layoutRioDeJaneiro.findViewById(R.id.city_textview_id);
+        layoutCityNameText.setText(R.string.RioDeJaneiro);
+
+        ConstraintLayout layoutSingapore = findViewById(R.id.layout_singapore);
+        layoutCityNameText = layoutSingapore.findViewById(R.id.city_textview_id);
+        layoutCityNameText.setText(R.string.Singapore);
+
+        ConstraintLayout layoutVietnam = findViewById(R.id.layout_vietnam);
+        layoutCityNameText = layoutVietnam.findViewById(R.id.city_textview_id);
+        layoutCityNameText.setText(R.string.Vietnam);
+
+        ConstraintLayout layoutWashingtonDC = findViewById(R.id.layout_washingtondc);
+        layoutCityNameText = layoutWashingtonDC.findViewById(R.id.city_textview_id);
+        layoutCityNameText.setText(R.string.WashingtonDC);
+/*
+        ConstraintLayout layoutSydney = findViewById(R.id.layout_sydney);
+
         TextView layoutSydneyText = layoutSydney.findViewById(R.id.city_textview_id);
-        layoutSydneyText.setText(R.string.sydney);
+        layoutSydneyText.setText(R.string.Sydney);
 
         ImageView layoutSydneyImage = layoutSydney.findViewById(R.id.city_imageview_id);
         layoutSydneyImage.setImageResource(R.drawable.sydneyharbourbridge);
+
+ */
 
 /*
         ConstraintLayout layoutSydney = findViewById(R.id.layout_Sydney);

@@ -41,5 +41,6 @@
         android:contentDescription="@string/City"
         app:layout_constraintStart_toEndOf="@+id/city_textview_id"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/londonbigben" />
+        app:srcCompat="@drawable/londonbigben"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

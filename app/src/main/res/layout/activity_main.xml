@@ -8,10 +8,11 @@
     tools:context=".MainActivity">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="183dp"
-        tools:layout_editor_absoluteY="223dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-124dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,37 +23,49 @@
                 android:id="@+id/layout_london"
                 layout="@layout/chunk_time_city_layout"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <include
                 android:id="@+id/layout_sydney"
                 layout="@layout/chunk_time_city_layout"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <include
                 android:id="@+id/layout_riodejaneiro"
                 layout="@layout/chunk_time_city_layout"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <include
                 android:id="@+id/layout_singapore"
                 layout="@layout/chunk_time_city_layout"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <include
                 android:id="@+id/layout_vietnam"
                 layout="@layout/chunk_time_city_layout"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <include
                 android:id="@+id/layout_washingtondc"
                 layout="@layout/chunk_time_city_layout"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/button_twentyfourhr_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24 Hr Time" />
+
+            <Button
+                android:id="@+id/button_twelvehr_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12 Hr Time" />
 
         </LinearLayout>
     </ScrollView>

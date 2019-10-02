@@ -2,18 +2,22 @@ package com.example.infs3634hwtask1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.icu.util.TimeZone;
 import android.os.Bundle;
 import android.widget.DigitalClock;
 import android.widget.ImageView;
+import android.widget.TextClock;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import java.util.Date;
+
 
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView layoutCityNameText; //declares TextView
     private ImageView layoutCityImage; // declares ImageView
+    private TextClock layoutCityTime; // declares TextClock
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         layoutCityNameText.setText(R.string.sydney);
         layoutCityImage = layoutSydney.findViewById(R.id.city_imageview_id);
         layoutCityImage.setImageResource(R.drawable.sydneyharbourbridge);
-
-
+        layoutCityTime = layoutSydney.findViewById(R.id.text_clock_id);
+        layoutCityTime.setTimeZone("Australia/Sydney");
 
         // London
         ConstraintLayout layoutLondon = findViewById(R.id.layout_london);
@@ -37,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         layoutCityNameText.setText(R.string.London);
         layoutCityImage = layoutLondon.findViewById(R.id.city_imageview_id);
         layoutCityImage.setImageResource(R.drawable.londonbigben);
+        layoutCityTime = layoutLondon.findViewById(R.id.text_clock_id);
+        layoutCityTime.setTimeZone("Europe/London");
 
         // Rio De Janeiro
         ConstraintLayout layoutRioDeJaneiro = findViewById(R.id.layout_riodejaneiro);
@@ -44,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
         layoutCityNameText.setText(R.string.RioDeJaneiro);
         layoutCityImage = layoutRioDeJaneiro.findViewById(R.id.city_imageview_id);
         layoutCityImage.setImageResource(R.drawable.riodejaneiro);
+        layoutCityTime = layoutRioDeJaneiro.findViewById(R.id.text_clock_id);
+        layoutCityTime.setTimeZone("Brazil/East");
 
         // Singpore
         ConstraintLayout layoutSingapore = findViewById(R.id.layout_singapore);
@@ -51,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
         layoutCityNameText.setText(R.string.Singapore);
         layoutCityImage = layoutSingapore.findViewById(R.id.city_imageview_id);
         layoutCityImage.setImageResource(R.drawable.singapore);
+        layoutCityTime = layoutSingapore.findViewById(R.id.text_clock_id);
+        layoutCityTime.setTimeZone("Asia/Singapore");
 
         // Ha Noi
         ConstraintLayout layoutVietnam = findViewById(R.id.layout_vietnam);
@@ -58,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
         layoutCityNameText.setText(R.string.Vietnam);
         layoutCityImage = layoutVietnam.findViewById(R.id.city_imageview_id);
         layoutCityImage.setImageResource(R.drawable.vietnamhalongbay);
+        layoutCityTime = layoutVietnam.findViewById(R.id.text_clock_id);
+        layoutCityTime.setTimeZone("Asia/Ho_Chi_Minh");
 
         // Washington DC
         ConstraintLayout layoutWashingtonDC = findViewById(R.id.layout_washingtondc);
@@ -65,6 +77,8 @@ public class MainActivity extends AppCompatActivity {
         layoutCityNameText.setText(R.string.WashingtonDC);
         layoutCityImage = layoutWashingtonDC.findViewById(R.id.city_imageview_id);
         layoutCityImage.setImageResource(R.drawable.washingtondc);
+        layoutCityTime = layoutWashingtonDC.findViewById(R.id.text_clock_id);
+        layoutCityTime.setTimeZone("US/Eastern");
 
 
 

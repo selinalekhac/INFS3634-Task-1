@@ -59,13 +59,13 @@
                 android:id="@+id/button_twentyfourhr_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="24 Hr Time" />
+                android:text="@string/TwentyFourHourTime" />
 
             <Button
                 android:id="@+id/button_twelvehr_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="12 Hr Time" />
+                android:text="@string/TwelveHourTime" />
 
         </LinearLayout>
     </ScrollView>

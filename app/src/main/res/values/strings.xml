@@ -9,4 +9,6 @@
     <string name="Singapore">Singapore</string>
     <string name="Vietnam">Ha Noi</string>
     <string name="sydney">Sydney</string>
+    <string name="TwentyFourHourTime">24 Hour Time</string>
+    <string name="TwelveHourTime">12 Hour Time</string>
 </resources>

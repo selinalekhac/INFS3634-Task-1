@@ -2,22 +2,21 @@ package com.example.infs3634hwtask1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.icu.util.TimeZone;
 import android.os.Bundle;
-import android.widget.DigitalClock;
 import android.widget.ImageView;
 import android.widget.TextClock;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import java.util.TimeZone;
 
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView layoutCityNameText; //declares TextView
     private ImageView layoutCityImage; // declares ImageView
-    private TextClock layoutCityTime; // declares TextClock
-
+    private TextClock layoutCityTime; // declares TextClock1
+    private TextClock twentyFourHrCityTime; // declares TextClock 2
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +31,11 @@ public class MainActivity extends AppCompatActivity {
         layoutCityNameText.setText(R.string.sydney);
         layoutCityImage = layoutSydney.findViewById(R.id.city_imageview_id);
         layoutCityImage.setImageResource(R.drawable.sydneyharbourbridge);
-        layoutCityTime = layoutSydney.findViewById(R.id.text_clock_id);
+        layoutCityTime = layoutSydney.findViewById(R.id.text12_clock_id);
         layoutCityTime.setTimeZone("Australia/Sydney");
+        twentyFourHrCityTime = layoutSydney.findViewById(R.id.text24_clock_id);
+        twentyFourHrCityTime.setTimeZone("Australia/Sydney");
+
 
         // London
         ConstraintLayout layoutLondon = findViewById(R.id.layout_london);
@@ -41,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         layoutCityNameText.setText(R.string.London);
         layoutCityImage = layoutLondon.findViewById(R.id.city_imageview_id);
         layoutCityImage.setImageResource(R.drawable.londonbigben);
-        layoutCityTime = layoutLondon.findViewById(R.id.text_clock_id);
+        layoutCityTime = layoutLondon.findViewById(R.id.text12_clock_id);
         layoutCityTime.setTimeZone("Europe/London");
 
         // Rio De Janeiro
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         layoutCityNameText.setText(R.string.RioDeJaneiro);
         layoutCityImage = layoutRioDeJaneiro.findViewById(R.id.city_imageview_id);
         layoutCityImage.setImageResource(R.drawable.riodejaneiro);
-        layoutCityTime = layoutRioDeJaneiro.findViewById(R.id.text_clock_id);
+        layoutCityTime = layoutRioDeJaneiro.findViewById(R.id.text12_clock_id);
         layoutCityTime.setTimeZone("Brazil/East");
 
         // Singpore
@@ -59,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         layoutCityNameText.setText(R.string.Singapore);
         layoutCityImage = layoutSingapore.findViewById(R.id.city_imageview_id);
         layoutCityImage.setImageResource(R.drawable.singapore);
-        layoutCityTime = layoutSingapore.findViewById(R.id.text_clock_id);
+        layoutCityTime = layoutSingapore.findViewById(R.id.text12_clock_id);
         layoutCityTime.setTimeZone("Asia/Singapore");
 
         // Ha Noi
@@ -68,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         layoutCityNameText.setText(R.string.Vietnam);
         layoutCityImage = layoutVietnam.findViewById(R.id.city_imageview_id);
         layoutCityImage.setImageResource(R.drawable.vietnamhalongbay);
-        layoutCityTime = layoutVietnam.findViewById(R.id.text_clock_id);
+        layoutCityTime = layoutVietnam.findViewById(R.id.text12_clock_id);
         layoutCityTime.setTimeZone("Asia/Ho_Chi_Minh");
 
         // Washington DC
@@ -77,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         layoutCityNameText.setText(R.string.WashingtonDC);
         layoutCityImage = layoutWashingtonDC.findViewById(R.id.city_imageview_id);
         layoutCityImage.setImageResource(R.drawable.washingtondc);
-        layoutCityTime = layoutWashingtonDC.findViewById(R.id.text_clock_id);
+        layoutCityTime = layoutWashingtonDC.findViewById(R.id.text12_clock_id);
         layoutCityTime.setTimeZone("US/Eastern");
 
 

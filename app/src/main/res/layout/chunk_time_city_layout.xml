@@ -37,12 +37,23 @@
         app:srcCompat="@drawable/londonbigben" />
 
     <TextClock
-        android:id="@+id/text_clock_id"
+        android:id="@+id/text12_clock_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city_textview_id" />
+
+    <TextClock
+        android:id="@+id/text24_clock_id"
+        android:format24Hour="h:mm"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/city_textview_id" />
 

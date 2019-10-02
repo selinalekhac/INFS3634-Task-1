@@ -3,9 +3,11 @@ package com.example.infs3634hwtask1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.DigitalClock;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import java.util.Date;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         layoutCityNameText.setText(R.string.sydney);
         layoutCityImage = layoutSydney.findViewById(R.id.city_imageview_id);
         layoutCityImage.setImageResource(R.drawable.sydneyharbourbridge);
+
+
 
         // London
         ConstraintLayout layoutLondon = findViewById(R.id.layout_london);

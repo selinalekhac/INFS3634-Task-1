@@ -14,33 +14,36 @@
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="160dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
         android:text="@string/City"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/city_imageview_id"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/time_textview_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="15dp"
-        android:text="@string/Time"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/city_textview_id" />
 
     <ImageView
         android:id="@+id/city_imageview_id"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
         android:contentDescription="@string/City"
-        app:layout_constraintStart_toEndOf="@+id/city_textview_id"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/londonbigben"/>
+        app:srcCompat="@drawable/londonbigben" />
+
+    <DigitalClock
+        android:id="@+id/digital_clock_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city_textview_id" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

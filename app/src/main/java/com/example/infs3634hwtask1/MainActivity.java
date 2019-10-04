@@ -10,6 +10,8 @@ import android.widget.TextClock;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+// This activity is basically for 12 hour time
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView layoutCityNameText; //declares TextView
@@ -32,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
         layoutCityImage.setImageResource(R.drawable.sydneyharbourbridge);
         layoutCityTime = layoutSydney.findViewById(R.id.text12_clock_id);
         layoutCityTime.setTimeZone("Australia/Sydney");
-        twentyFourHrCityTime = layoutSydney.findViewById(R.id.text24_clock_id);
-        twentyFourHrCityTime.setTimeZone("Australia/Sydney");
+        //twentyFourHrCityTime = layoutSydney.findViewById(R.id.text24_clock_id);
+        //twentyFourHrCityTime.setTimeZone("Australia/Sydney");
 
 
         // London
@@ -44,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
         layoutCityImage.setImageResource(R.drawable.londonbigben);
         layoutCityTime = layoutLondon.findViewById(R.id.text12_clock_id);
         layoutCityTime.setTimeZone("Europe/London");
-        twentyFourHrCityTime = layoutLondon.findViewById(R.id.text24_clock_id);
-        twentyFourHrCityTime.setTimeZone("Europe/London");
+        //twentyFourHrCityTime = layoutLondon.findViewById(R.id.text24_clock_id);
+        //twentyFourHrCityTime.setTimeZone("Europe/London");
 
         // Rio De Janeiro
         ConstraintLayout layoutRioDeJaneiro = findViewById(R.id.layout_riodejaneiro);
@@ -55,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
         layoutCityImage.setImageResource(R.drawable.riodejaneiro);
         layoutCityTime = layoutRioDeJaneiro.findViewById(R.id.text12_clock_id);
         layoutCityTime.setTimeZone("Brazil/East");
-        twentyFourHrCityTime = layoutRioDeJaneiro.findViewById(R.id.text24_clock_id);
-        twentyFourHrCityTime.setTimeZone("Brazil/East");
+        //twentyFourHrCityTime = layoutRioDeJaneiro.findViewById(R.id.text24_clock_id);
+        //twentyFourHrCityTime.setTimeZone("Brazil/East");
 
 
         // Singpore
@@ -67,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
         layoutCityImage.setImageResource(R.drawable.singapore);
         layoutCityTime = layoutSingapore.findViewById(R.id.text12_clock_id);
         layoutCityTime.setTimeZone("Asia/Singapore");
-        twentyFourHrCityTime = layoutSingapore.findViewById(R.id.text24_clock_id);
-        twentyFourHrCityTime.setTimeZone("Asia/Singapore");
+        //twentyFourHrCityTime = layoutSingapore.findViewById(R.id.text24_clock_id);
+        //twentyFourHrCityTime.setTimeZone("Asia/Singapore");
 
         // Ha Noi
         ConstraintLayout layoutVietnam = findViewById(R.id.layout_vietnam);
@@ -78,8 +80,8 @@ public class MainActivity extends AppCompatActivity {
         layoutCityImage.setImageResource(R.drawable.vietnamhalongbay);
         layoutCityTime = layoutVietnam.findViewById(R.id.text12_clock_id);
         layoutCityTime.setTimeZone("Asia/Ho_Chi_Minh");
-        twentyFourHrCityTime = layoutVietnam.findViewById(R.id.text24_clock_id);
-        twentyFourHrCityTime.setTimeZone("Asia/Ho_Chi_Minh");
+        //twentyFourHrCityTime = layoutVietnam.findViewById(R.id.text24_clock_id);
+        //twentyFourHrCityTime.setTimeZone("Asia/Ho_Chi_Minh");
 
         // Washington DC
         ConstraintLayout layoutWashingtonDC = findViewById(R.id.layout_washingtondc);
@@ -89,11 +91,8 @@ public class MainActivity extends AppCompatActivity {
         layoutCityImage.setImageResource(R.drawable.washingtondc);
         layoutCityTime = layoutWashingtonDC.findViewById(R.id.text12_clock_id);
         layoutCityTime.setTimeZone("US/Eastern");
-        twentyFourHrCityTime = layoutWashingtonDC.findViewById(R.id.text24_clock_id);
-        twentyFourHrCityTime.setTimeZone("US/Eastern");
-
-
-
+        //twentyFourHrCityTime = layoutWashingtonDC.findViewById(R.id.text24_clock_id);
+        //twentyFourHrCityTime.setTimeZone("US/Eastern");
 
 
     }

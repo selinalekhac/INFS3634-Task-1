@@ -20,7 +20,6 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:visibility="visible"
         app:layout_constraintEnd_toStartOf="@+id/city_imageview_id"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,17 +47,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/city_textview_id" />
 
-    <TextClock
-        android:id="@+id/text24_clock_id"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="70dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:format12Hour="@null"
-        android:format24Hour="k:mm"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/city_textview_id" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

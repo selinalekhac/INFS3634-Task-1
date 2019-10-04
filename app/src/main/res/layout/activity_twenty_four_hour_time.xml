@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorOrange"
-    tools:context=".MainActivity">
+    tools:context=".TwentyFourHourTime">
+
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp"
@@ -20,50 +21,56 @@
             android:orientation="vertical">
 
             <include
-                android:id="@+id/layout_london"
+                android:id="@+id/layout_london1"
                 layout="@layout/chunk_time_city_layout"
+                android:format24Hour= "k:mm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <include
-                android:id="@+id/layout_sydney"
+                android:id="@+id/layout_sydney1"
                 layout="@layout/chunk_time_city_layout"
+                android:format24Hour= "k:mm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <include
-                android:id="@+id/layout_riodejaneiro"
+                android:id="@+id/layout_riodejaneiro1"
                 layout="@layout/chunk_time_city_layout"
+                android:format24Hour= "k:mm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <include
-                android:id="@+id/layout_singapore"
+                android:id="@+id/layout_singapore1"
                 layout="@layout/chunk_time_city_layout"
+                android:format24Hour= "k:mm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <include
-                android:id="@+id/layout_vietnam"
+                android:id="@+id/layout_vietnam1"
                 layout="@layout/chunk_time_city_layout"
+                android:format24Hour= "k:mm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <include
-                android:id="@+id/layout_washingtondc"
+                android:id="@+id/layout_washingtondc1"
                 layout="@layout/chunk_time_city_layout"
+                android:format24Hour= "k:mm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <Button
-                android:id="@+id/button_twentyfourhr_id"
+                android:id="@+id/button_twentyfourhr_id1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onClick24hr"
                 android:text="@string/TwentyFourHourTime" />
 
             <Button
-                android:id="@+id/button_twelvehr_id"
+                android:id="@+id/button_twelvehr_id1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onClick12hr"
@@ -71,4 +78,5 @@
 
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -43,17 +43,20 @@
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="25dp"
+        android:format24Hour="@null"
+        android:format12Hour="h:mm:ss a"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/city_textview_id" />
 
     <TextClock
         android:id="@+id/text24_clock_id"
-        android:format24Hour="h:mm"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="70dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:format12Hour="@null"
+        android:format24Hour="k:mm"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/city_textview_id" />
 
